@@ -2,7 +2,7 @@ import os
 import argparse
 import warnings
 import numpy as np
-from sklearn.externals import joblib
+import joblib
 from sklearn.neural_network import MLPRegressor, MLPClassifier
 import gym
 from gym.envs.registration import register

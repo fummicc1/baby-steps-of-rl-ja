@@ -3,7 +3,7 @@ import argparse
 import random
 import numpy as np
 from sklearn.preprocessing import StandardScaler
-from sklearn.externals import joblib
+import joblib
 import tensorflow as tf
 from tensorflow.python import keras as K
 import gym

@@ -3,9 +3,9 @@ import random
 import argparse
 import numpy as np
 from sklearn.preprocessing import StandardScaler
-from sklearn.externals import joblib
+import joblib
 import tensorflow as tf
-from tensorflow.python import keras as K
+from tensorflow import keras as K
 import gym
 from fn_framework import FNAgent, Trainer, Observer, Experience
 tf.compat.v1.disable_eager_execution()

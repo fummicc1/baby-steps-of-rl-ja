@@ -2,7 +2,7 @@ import os
 import argparse
 import numpy as np
 from collections import defaultdict
-from sklearn.externals import joblib
+import joblib
 from sklearn.neural_network import MLPRegressor
 import tensorflow as tf
 import tensorflow.contrib.eager as tfe

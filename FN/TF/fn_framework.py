@@ -13,7 +13,6 @@ import matplotlib.pyplot as plt
 Experience = namedtuple("Experience",
                         ["s", "a", "r", "n_s", "d"])
 
-
 class FNAgent():
 
     def __init__(self, epsilon, actions):

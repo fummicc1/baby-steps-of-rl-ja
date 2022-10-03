@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.neural_network import MLPRegressor
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
-from sklearn.externals import joblib
+import joblib
 import gym
 from fn_framework import FNAgent, Trainer, Observer
 
