@@ -351,6 +351,17 @@ memory = ReplayMemory(10000)
 steps_done = 0
 
 
+def set_seed(seed):
+    np.random.seed(seed)
+    random_state = np.random.RandomState(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.backends.cudnn.deterministic = True
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    return random_state
+
+set_seed(128)
+
 def select_action(state):
     global steps_done
     sample = random.random()
